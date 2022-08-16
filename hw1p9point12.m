@@ -15,8 +15,8 @@ clear all;
 transferFunctions = [tf([1], [1 1])
     tf([1 -1],[1])
     tf([1 -1],[1 1])
-    tf([1 101 100],[1])
-    tf([1],[1 101 100])
+    tf([1 101 100],[1 0])
+    tf([1 0],[1 101 100])
     tf([1],[1 1 1])];
 
 for i = 1:length(transferFunctions)
